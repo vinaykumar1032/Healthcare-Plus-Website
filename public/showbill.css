@@ -1,0 +1,89 @@
+/* showbill.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #1c1c1c, #2c3e50); /* Dark gradient background */
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #00b4d8; /* Healthcare-inspired light blue */
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+table {
+    width: 90%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    background-color: #2f3640; /* Dark table background */
+    border: 1px solid #4b4b4b;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: center;
+    border: 1px solid #4b4b4b;
+}
+
+th {
+    background-color: #273c75; /* Header with muted blue */
+    color: #ffffff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+td {
+    color: #dcdde1; /* Soft white for better readability */
+    font-size: 0.95rem;
+}
+
+tr:nth-child(even) {
+    background-color: #353b48; /* Alternate dark rows */
+}
+
+tr:hover {
+    background-color: #485460; /* Highlight on hover */
+    cursor: pointer;
+    color: #ffffff;
+}
+
+table th:first-child,
+table td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+table th:last-child,
+table td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+p {
+    text-align: center;
+    font-size: 1rem;
+    color: #00b4d8;
+    font-weight: 500;
+    margin-top: -10px;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 0.85rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donate List</title>
+    <link rel="stylesheet" href="/donatelist.css">
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Blood Donate List <i class="fa-solid fa-droplet"></i> <form method="post" action="/login/screen-success"> <button>Back <i class="fa-solid fa-right-from-bracket"></i></button></form></h1>
+    <table>
+        <tr>
+            <th>TOKEN NUMBER</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>BLOOD GROUP</th>
+            <th>EMAIL ID</th>
+            <th>CONTACT NUMBER</th>
+            <th>AVAILABILITY DATE</th>
+            <th>STATUS</th>
+            <th>CONFIRM</th>
+        </tr>
+           <%for(let donor of result){%>
+            <tr>
+                <td><%=donor.ID%></td>
+                <td><%=donor.NAME%></td>
+                <td><%=donor.AGE%></td>
+                <td><%=donor.BLOOD%></td>
+                <td><%=donor.EMAIL%></td>
+                <td><%=donor.CONTACT%></td>
+                <td><%=donor. AVAILABILITY%></td>
+                <td><%=donor. STATUS%></td>
+            <form method="get" action="/donate/<%=donor.ID%>/edit">
+                <td><button>OPEN APPLICATION</button></td>
+            </form>
+            </tr>
+           <%}%>
+    </table>
+</body>
+</html>

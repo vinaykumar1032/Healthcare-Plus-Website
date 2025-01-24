@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill/Receipt Generation</title>
+    <link rel="stylesheet" href="/billing.css">
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section class="bill-generation">
+        <h1>Patient Bill / Receipt <i class="fa-solid fa-receipt"></i></h1>
+        <form id="billForm" method="post" action="#">
+            <div class="form-group">
+                <label for="name">Name of Patient:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Patient Name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter Age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="" disabled selected>Select Gender</option>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="days">No. of Days Stayed:</label>
+                <input type="number" id="days" name="number_of_days" placeholder="Enter Number of Days" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter Email Address" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="bigint" id="contact" name="contact_number" placeholder="Enter Contact Number" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Enter Medicines Name:</label>
+                <input type="text" id="medicines" name="medicines_name" placeholder="Enter Medicines Name" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Total Amount (₹):</label>
+                <input type="number" id="amount" name="amount" placeholder="Enter Total Amount" required>
+            </div>
+            <div class="form-actions">
+                <form method="post" action="#">
+                    <button type="submit" class="submit-btn">Add Bill in Database</button>
+                </form>
+                <button type="button" class="print-btn" onclick="window.print()">Print</button>
+            </div>
+        </form>
+        <form method="post" action="/login/screen-success"> <button class="back-btn">Back <i class="fa-solid fa-right-from-bracket"></i></button>
+    </section>
+</body>
+</html>

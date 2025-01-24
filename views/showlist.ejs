@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer's List</title>
+    <link rel="stylesheet" href="/showlist.css">
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Volunteer's List <i class="fa-solid fa-person-shelter"></i></h1>
+    <p>Those who have applied & their name not shown in the list. Kindly wait for approval, once it gets approval - your name will be shown!</p>
+    <table>
+        <tr>
+            <th>ID <i class="fa-solid fa-id-card"></i></th>
+            <th>FULL NAME <i class="fa-solid fa-user"></i></th>
+            <th>EMAIL ID <i class="fa-solid fa-envelope"></i></th>
+            <th>AVAILABILITY <i class="fa-solid fa-clock"></i></th>
+        </tr>
+        <%for(let user of result){%>
+            <tr>
+                <td><%= user.ID%></td>
+                <td><%=user.NAME%></td>
+                <td><%=user.EMAIL%></td>
+                <td><%= user.AVAILABILITY%></td>
+            </tr>
+        <%}%>
+    </table>
+</body>
+</html>

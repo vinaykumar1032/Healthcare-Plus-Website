@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking Appointment</title>
+  <link rel="stylesheet" href="/appointment.css">
+  <link rel="icon" href="/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <div class="header-content">
+      <h1> Appointment <i class="fa-solid fa-calendar-days"></i></h1>
+      <p>Book a consultation with one of our healthcare professionals easily.</p>
+    </div>
+  </header>
+
+  <!-- Appointment Form Section -->
+  <section class="appointment">
+    <div class="container">
+      <h2>Schedule a Consultation <i class="fa-solid fa-clock"></i></h2>
+      <p>Fill out the form below to book an appointment with a healthcare professional. We’ll get back to you shortly to confirm your slot.</p>
+
+      <form action="#" method="POST" class="appointment-form">
+        <div class="form-group">
+          <label for="name">Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone *</label>
+          <input type="phone" id="phone" name="phone" required>
+        </div>
+
+        <div class="form-group">
+          <label for="appointment_date">Preferred Date *</label>
+          <input type="date" id="appointment_date" name="appointment_date" required>
+        </div>
+
+        <div class="form-group">
+          <label for="doctor">Doctor Preference</label>
+          <select id="doctor" name="doctor">
+            <option value="">Select a doctor</option>
+            <option>Dr. Aditi Mehta (Cardiologist)</option>
+            <option>Dr. Rohan Sharma (Neurologist)</option>
+            <option>Dr. Neha Gupta (Dermatologist)</option>
+            <option>Dr. Anil Joshi (Orthopedic Surgeon)</option>
+            <option>Dr. Preeti Desai (Pediatrician)</option>
+            <option>Dr. Sanjay Kumar (General Physician)</option>
+            <option>Dr. Sneha Patil (Psychiatrist)</option>
+            <option>Dr. Meenal Arora (Skin Specialist)</option>
+            <option>Dr. Arjun Singh (Cardiothoracic Surgeon)</option>
+            <option>Dr. Deepa Kulkarni (Pathologist)</option>
+            <option>Dr. Vikas Malhotra (Immunologist)</option>
+            <option>Dr. Kiran Bhatia (Sports Medicine Specialist)</option>
+            <option>Dr. Shweta Kulkarni (Ear Specialist)</option>
+            <option>Dr. Ritu Jain (Hematologist)</option>
+            <option>Dr. Rohit Prasad (Eye Specialist)</option>
+          </select>
+        </div>
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </div>
+  </section>
+
+  
+</body>
+</html>

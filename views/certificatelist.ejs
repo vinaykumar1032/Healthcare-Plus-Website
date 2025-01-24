@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blood Donor's List</title>
+    <link rel="stylesheet" href="/certificate.css">
+    <link rel="icon" href="/icon.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>List of Blood-Donor's <i class="fa-solid fa-person"></i> <i class="fa-solid fa-droplet"></i>
+        <form method="get" action="/home"> <button>Back to Home <i
+                    class="fa-solid fa-right-from-bracket"></i></button></form>
+    </h1>
+    <table>
+        <tr>
+            <th>ID <i class="fa-solid fa-id-card"></i></th>
+            <th>NAME <i class="fa-solid fa-user"></i></th>
+            <th>AGE <i class="fa-solid fa-circle-up"></i></th>
+            <th>BLOOD GROUP <i class="fa-solid fa-droplet"></i></th>
+            <th>DOWNLOAD CERTIFICATE <i class="fa-solid fa-graduation-cap"></i></th>
+        </tr>
+            <%for(let application of result){%>
+                <tr>
+                <td><%=application. ID%></td>
+                <td><%=application.NAME%></td>
+                <td><%=application.AGE%></td>
+                <td><%=application.BLOOD%></td>
+                <td><a href="/Blood-Donation-Certificate.pdf">Download Now  <i class="fa-solid fa-download"></i></a></td>
+                </tr>
+            <%}%>
+    </table>
+</body>
+</html>

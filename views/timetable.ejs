@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time-Table of Doctors</title>
+    <link rel="stylesheet" href="/timetable.css">
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Time Table of Doctors <i class="fa-solid fa-clock"></i> <form method="post" action="/login/screen-success"> <button><i class="fa-solid fa-right-from-bracket"></i></button></form></h1>
+    <table>
+        <tr>
+            <th>EMP ID</th>
+            <th>NAME</th>
+            <th>SPECIALIST</th>
+            <th>TIMINGS</th>
+            <th>CONTACT NUMBER</th>
+        </tr>
+            <%for(let doctor of result){%>
+                <tr>
+                <td><%=doctor.ID%></td>
+                <td><%=doctor.NAME%></td>
+                <td><%=doctor.SPECIALIST%></td>
+                <td><%=doctor.TIMINGS%></td>
+                <td><%=doctor.CONTACT_NUMBER%></td>
+                </tr>
+            <%}%>
+    </table>
+</body>
+</html>
+

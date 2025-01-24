@@ -1,0 +1,20 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "method-override": "^3.0.0",
+    "mysql2": "^3.12.0"
+  },
+  "name": "project-code-for-bharat",
+  "version": "1.0.0",
+  "description": "Rural area healthcare department",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "healthcare"
+  ],
+  "author": "CodeMasters Team",
+  "license": "ISC"
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Receipts & Bills</title>
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="/showbill.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>All Receipts / Bill Details <i class="fa-solid fa-address-book"></i> </h1>
+    <table>
+        <tr>
+            <th>BILL NUMBER</th>
+            <th>NAME</th>
+            <th>AGE</th>
+            <th>GENDER</th>
+            <th>NUMBER OF DAYS IN DISPENSARY</th>
+            <th>EMAIL</th>
+            <th>CONTACT NUMBER</th>
+            <th>MEDICINE'S NAME</th>
+            <th>AMOUNT</th>
+        </tr>
+        <%for(let bills of result){%>
+            <tr>
+                <td><%= bills.ID %></td>
+                <td><%= bills.NAME %></td>
+                <td><%= bills.AGE %></td>
+                <td><%= bills.GENDER %></td>
+                <td><%= bills.NUMBER_OF_DAYS %></td>
+                <td><%= bills.EMAIL %></td>
+                <td><%= bills.CONTACT_NUMBER %></td>
+                <td><%= bills.MEDICINES_NAME %></td>
+                <td><%= bills.AMOUNT %></td>
+             </tr>
+        <%}%>
+    </table>
+</body>
+</html>

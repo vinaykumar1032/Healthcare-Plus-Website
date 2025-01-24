@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join us as volunteer</title>
+    <link rel="stylesheet" href="/volunteer.css">
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Join Healthcare+ as a Volunteer  <i class="fa-solid fa-people-roof"></i></h1>
+            <p>Make a difference in the lives of people in rural communities. Be a part of our mission to provide healthcare for everyone!</p>
+        </header>
+        <form action="" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="contact">Contact Number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="Enter your contact number" required>
+            </div>
+            <div class="form-group">
+                <label for="skills">Skills/Expertise:</label>
+                <textarea id="skills" name="skills" rows="4" placeholder="Describe your skills or areas of expertise"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="availability">Availability:</label>
+                <select id="availability" name="availability" required>
+                    <option value="full-time">Full-Time</option>
+                    <option value="part-time">Part-Time</option>
+                    <option value="weekends">Weekends Only</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-btn">Join as a Volunteer <i class="fa-solid fa-share-from-square"></i></button>
+        </form>
+    </div>
+</body>
+</html>
